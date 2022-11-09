@@ -54,6 +54,12 @@ void setup()
     //Image smaller than CANVAS needs separate algorithm
   }
   //
+  //Verifying Variable Values after algoroithm
+  println("App Width:", appWidth, " and App Height:", appHeight);
+  println("Larger Image dimension is:", largerDimension);
+  println("Image dimensions are:", picWidth, picHeight);
+  println("Adjusted Image dimesnions are (stretch is goal):", picWidthAdjusted, picHeightAdjusted);
+  //
 }//End setup
 //
 void draw() {
@@ -65,9 +71,6 @@ void mousePressed() {
 //
 
 
-println(appWidth, imageWidthRatio);
-println(appHeight, imageHeightRatio);
-picWidthAdjusted = appWidth * imageWidthRatio;
 
 //Developer verified variables
 println (appWidth, picWidth, picWidthAdjusted);
