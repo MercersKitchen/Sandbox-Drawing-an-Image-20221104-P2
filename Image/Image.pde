@@ -80,6 +80,7 @@ void setup()
 void draw()
 {
   if (nightMode == true) {
+    //RGB tint() works in draw()
     tint(64, 64, 40); //RGB: Night Mode
     image( pic, backgroundImageX, backgroundImageY, picWidthAdjusted, picHeightAdjusted);
   }
