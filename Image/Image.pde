@@ -81,8 +81,6 @@ void draw()
 {
   if (nightMode == true) {
     //RGB tint() works in draw()
-    tint(64, 64, 40); //RGB: Night Mode
-    image( pic, backgroundImageX, backgroundImageY, picWidthAdjusted, picHeightAdjusted);
   }
 }//End draw
 //
@@ -90,8 +88,19 @@ void keyPressed() {
 }//End keyPressed
 //
 void mousePressed() {
-  if (mouseButton == LEFT) nightMode = true;
-  if (mouseButton == RIGHT) nightMode = false;
+  //
+  //Mouse Pressed will control background image
+  if (mouseButton == LEFT) {
+    nightMode = true;
+    tint(255, 50); //Gray Scale: use 1/2 tint value for white (i.e. 128/256=1/2)
+    image( pic, backgroundImageX, backgroundImageY, picWidthAdjusted, picHeightAdjusted);
+    //
+  }
+  if (mouseButton == RIGHT) {
+    nightMode = false;
+    tint(64, 64, 40); //RGB: Night Mode
+    image( pic, backgroundImageX, backgroundImageY, picWidthAdjusted, picHeightAdjusted);
+  }
 }//End mousePressed
 //
 //End Main Program
