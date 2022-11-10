@@ -80,8 +80,8 @@ void setup()
   println("Adjusted Image dimesnions are (stretch is goal):", picWidthAdjusted, picHeightAdjusted);
   //
   //Population
-  pic = loadImage("../Images Used/Obi-wan-star-wars-jedi-23864621-800-600.jpg");
-  pic2 = loadImage("../Images Used/");
+  pic = loadImage("../Images Used/Landscape/Obi-wan-star-wars-jedi-23864621-800-600.jpg");
+  pic2 = loadImage("../Images Used/Landscape/bike.jpg");
   //pic3 = loadImage("");
   backgroundImageX = appWidth*0;
   backgroundImageY = appHeight*0;
@@ -90,7 +90,7 @@ void setup()
   topHalfX = appWidth * 1/4;
   topHalfY = appHeight * 1/20;
   topHalfWidth = appWidth * 1/2;
-  topHalfHeight = appHeight * 8/20;
+  topHalfHeight = appHeight * 13/20;
   bottomHalfX = appWidth *1/2;
   bottomHalfY = appHeight * 3/4;
   bottomHalfWidth = appWidth * 1/4;
