@@ -5,7 +5,7 @@ float picWidthAdjusted=0.0, picHeightAdjusted=0.0;
 float backgroundImageX, backgroundImageY, backgroundImageWidth, backgroundImageHeight;
 float topHalfX, topHalfY, topHalfWidth, topHalfHeight;
 float bottomHalfX, bottomHalfY, bottomHalfWidth, bottomHalfHeight;
-PImage pic;
+PImage pic, pic2, pic3;
 Boolean nightMode=false;
 int tintDayMode=255, tintDayModeOpacity=50;
 int tintRed=64, tintGreen=64, tintBlue=40, tintNightModeOpacity=85;
@@ -22,6 +22,10 @@ void setup()
   //Note: Dimensions are found in the image file / Right Click / Properties / Details
   int picWidth = 800;
   int picHeight = 600;
+  int pic2Width = ; //landscape
+  int pic2Height = ; //landscape
+  int pic3Width = ; //portrait
+  intpic3Height = ; //portrait
   //
   float smallerDimension, largerDimension;
   //Image Orientation: Landscape, Portrait, Square
@@ -94,8 +98,8 @@ void setup()
 //
 void draw()
 {
-  image( topHalfX, topHalfY, topHalfWidth, topHalfHeight );
-  image( bottomHalfX, bottomHalfY, bottomHalfWidth, bottomHalfHeight ); 
+  image( pic2, topHalfX, topHalfY, topHalfWidth, topHalfHeight );
+  //image( pic3, bottomHalfX, bottomHalfY, bottomHalfWidth, bottomHalfHeight ); 
 }//End draw
 //
 void keyPressed() {
