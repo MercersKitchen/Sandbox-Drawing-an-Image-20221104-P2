@@ -1,7 +1,7 @@
 //Global Variables
 int appWidth, appHeight;
 Boolean widthLarger=false, heightLarger=false;
-Boolean widthLarger2=false, heightLarge2r=false;
+Boolean widthLarger2=false, heightLarger2=false;
 float picWidthAdjusted=0.0, picHeightAdjusted=0.0;
 float backgroundImageX, backgroundImageY, backgroundImageWidth, backgroundImageHeight;
 float topHalfX, topHalfY, topHalfWidth, topHalfHeight;
@@ -43,6 +43,7 @@ void setup()
     largerDimension2 = pic2Width;
     smallerDimension2 = pic2Height;
     widthLarger2 = true;
+    //Landscape large Image to larger space OR smaller space
   } else { //False if Portrait
     largerDimension2 = pic2Height;
     smallerDimension2 = pic2Width;
@@ -80,6 +81,8 @@ void setup()
   //
   //Population
   pic = loadImage("../Images Used/Obi-wan-star-wars-jedi-23864621-800-600.jpg");
+  pic2 = loadImage("../Images Used/");
+  //pic3 = loadImage("");
   backgroundImageX = appWidth*0;
   backgroundImageY = appHeight*0;
   backgroundImageWidth = appWidth-1;
