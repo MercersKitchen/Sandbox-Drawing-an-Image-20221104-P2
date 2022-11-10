@@ -5,6 +5,7 @@ float picWidthAdjusted=0.0, picHeightAdjusted=0.0;
 float backgroundImageX, backgroundImageY, backgroundImageWidth, backgroundImageHeight;
 PImage pic;
 Boolean nightMode=false;
+int tintDayMode=255;
 //
 void setup()
 {
@@ -71,7 +72,7 @@ void setup()
   rect( backgroundImageX, backgroundImageY, backgroundImageWidth, backgroundImageHeight );
   //
   //Background Image must be single executed code
-  if (nightMode == false) tint(255, 50); //Gray Scale: use 1/2 tint value for white (i.e. 128/256=1/2)
+  if (nightMode == false) tint(tintDayMode, 50); //Gray Scale: use 1/2 tint value for white (i.e. 128/256=1/2)
   //image( pic, backgroundImageX, backgroundImageY, backgroundImageWidth, backgroundImageHeight);
   image( pic, backgroundImageX, backgroundImageY, picWidthAdjusted, picHeightAdjusted);
   //
