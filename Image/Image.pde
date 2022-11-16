@@ -53,6 +53,7 @@ void setup()
   //
   //Teaching example, width is known to be larger
   float imageWidthRatio=0.0, imageHeightRatio=0.0;
+  float imageHeightRatio2=0.0;
   //Better Image Stretch Algorithm, smaller image to larger CANVAS
   if ( appWidth >= picWidth ) {
     picWidthAdjusted = appWidth;
@@ -78,6 +79,7 @@ void setup()
   //Bicycle Image: landscape into landscape
   if ( widthLarger2 == true ) { //Lanscape or Square is TRUE
     picWidthAdjusted2 = topHalfWidth;
+    imageHeightRatio2 = smallerDimension2 / largerDimension2;
     picHeightAdjusted2 = picWidthAdjusted2 * imageHeightRatio2;
   } else { //Portrait is TRUE, heightLarger2==true
   }
