@@ -78,8 +78,7 @@ void setup()
   //Bicycle Image: landscape into landscape
   if ( widthLarger2 == true ) { //Lanscape or Square is TRUE
     picWidthAdjusted2 = topHalfWidth;
-    
-    //picHeightAdjusted2=;
+    picHeightAdjusted2 = picWidthAdjusted2 * imageHeightRatio2;
   } else { //Portrait is TRUE, heightLarger2==true
   }
   //
