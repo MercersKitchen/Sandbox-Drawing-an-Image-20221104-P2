@@ -122,7 +122,7 @@ void setup()
 //
 void draw()
 {
-  image( pic2, topHalfX, topHalfY, topHalfWidth, topHalfHeight );
+  image( pic2, topHalfX, topHalfY, picWidthAdjusted2, picHeightAdjusted2 );
   //image( pic3, bottomHalfX, bottomHalfY, bottomHalfWidth, bottomHalfHeight );
 }//End draw
 //
