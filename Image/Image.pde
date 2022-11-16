@@ -74,7 +74,10 @@ void setup()
   }
   //
   //Image is either larger or smaller than rect (including CANVAS)
-  
+  //Bicycle Image: landscape into landscape
+  if ( widthLarger2 == true ) { //Lanscape or Square is TRUE
+  } else { //Portrait is TRUE, heightLarger2==true
+  }
   //
   //Verifying Variable Values after algoroithm
   println("App Width:", appWidth, " and App Height:", appHeight);
@@ -115,7 +118,7 @@ void setup()
 void draw()
 {
   image( pic2, topHalfX, topHalfY, topHalfWidth, topHalfHeight );
-  //image( pic3, bottomHalfX, bottomHalfY, bottomHalfWidth, bottomHalfHeight ); 
+  //image( pic3, bottomHalfX, bottomHalfY, bottomHalfWidth, bottomHalfHeight );
 }//End draw
 //
 void keyPressed() {
