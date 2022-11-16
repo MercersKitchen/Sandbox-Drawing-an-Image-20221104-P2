@@ -77,7 +77,9 @@ void setup()
   //Image is either larger or smaller than rect (including CANVAS)
   //Bicycle Image: landscape into landscape
   if ( widthLarger2 == true ) { //Lanscape or Square is TRUE
-  
+    picWidthAdjusted2 = topHalfWidth;
+    
+    //picHeightAdjusted2=;
   } else { //Portrait is TRUE, heightLarger2==true
   }
   //
