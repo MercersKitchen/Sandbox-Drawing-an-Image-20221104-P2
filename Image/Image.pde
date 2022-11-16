@@ -3,6 +3,7 @@ int appWidth, appHeight;
 Boolean widthLarger=false, heightLarger=false;
 Boolean widthLarger2=false, heightLarger2=false;
 float picWidthAdjusted=0.0, picHeightAdjusted=0.0;
+float picWidthAdjusted2=0.0, picHeightAdjusted2=0.0;
 float backgroundImageX, backgroundImageY, backgroundImageWidth, backgroundImageHeight;
 float topHalfX, topHalfY, topHalfWidth, topHalfHeight;
 float bottomHalfX, bottomHalfY, bottomHalfWidth, bottomHalfHeight;
@@ -76,6 +77,7 @@ void setup()
   //Image is either larger or smaller than rect (including CANVAS)
   //Bicycle Image: landscape into landscape
   if ( widthLarger2 == true ) { //Lanscape or Square is TRUE
+  
   } else { //Portrait is TRUE, heightLarger2==true
   }
   //
