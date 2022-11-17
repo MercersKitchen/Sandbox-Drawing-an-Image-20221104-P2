@@ -63,6 +63,39 @@ void setup()
     largerDimension1 = picHeight1;
     smallerDimension1 = picWidth1;
     //
+    picHeightAdjusted1 = backgroundImageHeight; //from rect() layout
+    imageWidthRatio1 = smallerDimension1 / largerDimension1;
+    picWidthAdjusted1 = picHeightAdjusted1 * imageWidthRatio1;
+  }
+  if ( picWidth2 >= picHeight2 ) { //True if Landscape or Square
+    largerDimension2 = picWidth2;
+    smallerDimension2 = picHeight2;
+    //
+    picWidthAdjusted2 = topHalfWidth; //from rect() layout
+    imageHeightRatio2 = smallerDimension2 / largerDimension2;
+    picHeightAdjusted2 = picWidthAdjusted2 * imageHeightRatio2;
+  } else { //False if Portrait
+    largerDimension2 = picHeight2;
+    smallerDimension2 = picWidth2;
+    //
+    picHeightAdjusted2 = topHalfHeight; //from rect() layout
+    imageWidthRatio2 = smallerDimension2 / largerDimension2;
+    picWidthAdjusted2 = picHeightAdjusted2 * imageWidthRatio2;
+  }
+  if ( picWidth3 >= picHeight3 ) { //True if Landscape or Square
+    largerDimension3 = picWidth3;
+    smallerDimension3 = picHeight3;
+    //
+    picWidthAdjusted3 = bottomHalfWidth; //from rect() layout
+    imageHeightRatio3 = smallerDimension3 / largerDimension3;
+    picHeightAdjusted3 = picWidthAdjusted3 * imageHeightRatio3;
+  } else { //False if Portrait
+    largerDimension3 = picHeight3;
+    smallerDimension3 = picWidth3;
+    //
+    picHeightAdjusted3 = bottomHalfHeight; //from rect() layout
+    imageWidthRatio3 = smallerDimension3 / largerDimension3;
+    picWidthAdjusted3 = picHeightAdjusted3 * imageWidthRatio3;
   }
   if ( pic2Width >= pic2Height ) { //True if Landscape or Square
     largerDimension2 = pic2Width;
@@ -76,7 +109,7 @@ void setup()
   }
   //
   //Teaching example, width is known to be larger
-  
+
   //Better Image Stretch Algorithm, smaller image to larger CANVAS
   if ( appWidth >= picWidth ) {
     picWidthAdjusted = appWidth;
@@ -85,7 +118,7 @@ void setup()
     //
     if ( appHeight >= picHeight ) {
       if ( widthLarger == true ) 
-      picHeightAdjusted = picWidthAdjusted * imageHeightRatio;
+        picHeightAdjusted = picWidthAdjusted * imageHeightRatio;
       if (appHeight < picHeightAdjusted ) {
         println("STOP: image is too big for CANVAS");
         exit(); //stops any further use of APP
