@@ -3,7 +3,7 @@ int appWidth, appHeight;
 float backgroundImageX, backgroundImageY, backgroundImageWidth, backgroundImageHeight;
 float picWidthAdjusted1=0.0, picHeightAdjusted1=0.0;
 float picWidthAdjusted2=0.0, picHeightAdjusted2=0.0;
-
+float picWidthAdjusted3=0.0, picHeightAdjusted3=0.0;
 float topHalfX, topHalfY, topHalfWidth, topHalfHeight;
 float bottomHalfX, bottomHalfY, bottomHalfWidth, bottomHalfHeight;
 PImage pic, pic2, pic3;
@@ -52,6 +52,7 @@ void setup()
   float largerDimension1, largerDimension2, largerDimension3;
   float imageWidthRatio1=0.0, imageHeightRatio1=0.0;
   float imageWidthRatio2=0.0, imageHeightRatio2=0.0;
+  float imageWidthRatio3=0.0, imageHeightRatio3=0.0;
   if ( picWidth1 >= picHeight1 ) { //True if Landscape or Square
     largerDimension1 = picWidth1;
     smallerDimension1 = picHeight1;
