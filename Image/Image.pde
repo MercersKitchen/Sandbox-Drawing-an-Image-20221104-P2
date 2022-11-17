@@ -16,6 +16,7 @@ void setup()
 {
   size(800, 600); //Landscape
   //Copy Display Algorithm from Hello World
+  //fullScreen(); //displayWidth, displayHeigth
   appWidth = width;
   appHeight = height;
   //
