@@ -50,11 +50,15 @@ void setup()
   //Scaling Image size with aspect ratio requires larger dimension
   float smallerDimension1, smallerDimension2, smallerDimension3;
   float largerDimension1, largerDimension2, largerDimension3;
+  float imageWidthRatio1=0.0, imageHeightRatio1=0.0;
+  float imageWidthRatio2=0.0, imageHeightRatio2=0.0;
   if ( picWidth1 >= picHeight1 ) { //True if Landscape or Square
     largerDimension1 = picWidth1;
     smallerDimension1 = picHeight1;
     //
     picWidthAdjusted1 = backgroundImageWidth; //from rect() layout
+    imageHeightRatio1 = smallerDimension1 / largerDimension1;
+    picHeightAdjusted1 = picWidthAdjusted1 * imageHeightRatio1;
   } else { //False if Portrait
     largerDimension1 = picHeight1;
     smallerDimension1 = picWidth1;
@@ -72,8 +76,7 @@ void setup()
   }
   //
   //Teaching example, width is known to be larger
-  float imageWidthRatio=0.0, imageHeightRatio=0.0;
-  float imageWidthRatio2=0.0, imageHeightRatio2=0.0;
+  
   //Better Image Stretch Algorithm, smaller image to larger CANVAS
   if ( appWidth >= picWidth ) {
     picWidthAdjusted = appWidth;
@@ -81,7 +84,7 @@ void setup()
     if ( widthLarger == true ) imageWidthRatio = largerDimension / largerDimension;
     //
     if ( appHeight >= picHeight ) {
-      if ( widthLarger == true ) imageHeightRatio = smallerDimension / largerDimension;
+      if ( widthLarger == true ) 
       picHeightAdjusted = picWidthAdjusted * imageHeightRatio;
       if (appHeight < picHeightAdjusted ) {
         println("STOP: image is too big for CANVAS");
