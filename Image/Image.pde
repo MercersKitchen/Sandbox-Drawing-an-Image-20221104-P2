@@ -51,14 +51,14 @@ void setup()
   //Scaling Image size with aspect ratio requires larger dimension
   float smallerDimension1, smallerDimension2, smallerDimension3;
   float largerDimension1, largerDimension2, largerDimension3;
-  if ( picWidth >= picHeight ) { //True if Landscape or Square
-    largerDimension = picWidth;
-    smallerDimension = picHeight;
-    widthLarger = true;
+  if ( picWidth1 >= picHeight1 ) { //True if Landscape or Square
+    largerDimension1 = picWidth1;
+    smallerDimension1 = picHeight1;
+    //
   } else { //False if Portrait
-    largerDimension = picHeight;
-    smallerDimension = picWidth;
-    heightLarger = true;
+    largerDimension1 = picHeight1;
+    smallerDimension1 = picWidth1;
+    //
   }
   if ( pic2Width >= pic2Height ) { //True if Landscape or Square
     largerDimension2 = pic2Width;
