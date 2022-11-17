@@ -37,7 +37,8 @@ void setup()
   bottomHalfWidth = appWidth * 1/4;
   bottomHalfHeight = appHeight * 4/20;
   //
-  //Image Dimensions for Aspect Ratio
+  //Image Dimensions for Aspect Ratio: image meta data
+  //Note: meta explored in MP3's or music files
   //Obi-wan-star-wars-jedi-23864621-800-600.jpg
   //Note: Dimensions are found in the image file / Right Click / Properties / Details
   int picWidth = 800;
