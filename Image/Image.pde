@@ -98,63 +98,6 @@ void setup()
     imageWidthRatio3 = smallerDimension3 / largerDimension3;
     picWidthAdjusted3 = picHeightAdjusted3 * imageWidthRatio3;
   }
-  if ( pic2Width >= pic2Height ) { //True if Landscape or Square
-    largerDimension2 = pic2Width;
-    smallerDimension2 = pic2Height;
-    widthLarger2 = true;
-    //Landscape large Image to larger space OR smaller space
-  } else { //False if Portrait
-    largerDimension2 = pic2Height;
-    smallerDimension2 = pic2Width;
-    heightLarger2 = true;
-  }
-  //
-  //Teaching example, width is known to be larger
-
-  //Better Image Stretch Algorithm, smaller image to larger CANVAS
-  if ( appWidth >= picWidth ) {
-    picWidthAdjusted = appWidth;
-    //
-    if ( widthLarger == true ) imageWidthRatio = largerDimension / largerDimension;
-    //
-    if ( appHeight >= picHeight ) {
-      if ( widthLarger == true ) 
-        picHeightAdjusted = picWidthAdjusted * imageHeightRatio;
-      if (appHeight < picHeightAdjusted ) {
-        println("STOP: image is too big for CANVAS");
-        exit(); //stops any further use of APP
-        //Remember: goal is 1:1 aspect ratio
-      }
-    } else {
-      //Image smaller than CANVAS needs separate algorithm
-    }
-  } else {
-    //Image smaller than CANVAS needs separate algorithm
-  }
-  //
-  //Image is either larger or smaller than rect (including CANVAS)
-  //Bicycle Image: landscape into landscape
-  if ( widthLarger2 == true ) { //Lanscape or Square is TRUE
-    picWidthAdjusted2 = topHalfWidth;
-    imageHeightRatio2 = smallerDimension2 / largerDimension2;
-    picHeightAdjusted2 = picWidthAdjusted2 * imageHeightRatio2;
-  } else { //Portrait is TRUE, heightLarger2==true
-    picHeightAdjusted2 = topHalfHeight;
-    imageWidthRatio2 = smallerDimension2 / largerDimension2;
-    picWidthAdjusted2 = picHeightAdjusted2 * imageWidthRatio2;
-  }
-  //
-  //Verifying Variable Values after algoroithm
-  println("App Width:", appWidth, " and App Height:", appHeight);
-  println("Larger Image dimension is:", largerDimension);
-  println("Image dimensions are:", picWidth, picHeight);
-  println("Adjusted Image 1 dimensions are (stretch is goal):", picWidthAdjusted, picHeightAdjusted);
-  //
-  println("Image Width:", pic2Width, " and Image Height:", pic2Height);
-  println("Larger Image dimension is:", widthLarger2, "or", heightLarger2);
-  println("Rectangle dimensions are:", topHalfWidth, topHalfHeight);
-  println("Scale Ratios, width: ", "height is", imageHeightRatio2); 
-  println("Adjusted Image 2 dimensions are (stretch is goal):", picWidthAdjusted2, picHeightAdjusted2);
   //
   //Rectangular Layout and Image Drawing to CANVAS
   rect( backgroundImageX, backgroundImageY, backgroundImageWidth, backgroundImageHeight );
