@@ -1,10 +1,9 @@
 //Global Variables
 int appWidth, appHeight;
-Boolean widthLarger=false, heightLarger=false;
-Boolean widthLarger2=false, heightLarger2=false;
+float backgroundImageX, backgroundImageY, backgroundImageWidth, backgroundImageHeight;
 float picWidthAdjusted1=0.0, picHeightAdjusted1=0.0;
 float picWidthAdjusted2=0.0, picHeightAdjusted2=0.0;
-float backgroundImageX, backgroundImageY, backgroundImageWidth, backgroundImageHeight;
+
 float topHalfX, topHalfY, topHalfWidth, topHalfHeight;
 float bottomHalfX, bottomHalfY, bottomHalfWidth, bottomHalfHeight;
 PImage pic, pic2, pic3;
