@@ -47,8 +47,10 @@ void setup()
   int picWidth3 = 325; //DarthVader Portrait
   int picHeight3 = 485;
   //
-  float smallerDimension, largerDimension, smallerDimension2, largerDimension2;
   //Image Orientation: Landscape, Portrait, Square
+  //Scaling Image size with aspect ratio requires larger dimension
+  float smallerDimension1, smallerDimension2, smallerDimension3;
+  float largerDimension1, largerDimension2, largerDimension3;
   if ( picWidth >= picHeight ) { //True if Landscape or Square
     largerDimension = picWidth;
     smallerDimension = picHeight;
