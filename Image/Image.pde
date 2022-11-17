@@ -2,7 +2,7 @@
 int appWidth, appHeight;
 Boolean widthLarger=false, heightLarger=false;
 Boolean widthLarger2=false, heightLarger2=false;
-float picWidthAdjusted=0.0, picHeightAdjusted=0.0;
+float picWidthAdjusted1=0.0, picHeightAdjusted1=0.0;
 float picWidthAdjusted2=0.0, picHeightAdjusted2=0.0;
 float backgroundImageX, backgroundImageY, backgroundImageWidth, backgroundImageHeight;
 float topHalfX, topHalfY, topHalfWidth, topHalfHeight;
@@ -55,6 +55,7 @@ void setup()
     largerDimension1 = picWidth1;
     smallerDimension1 = picHeight1;
     //
+    picWidthAdjusted1 = backgroundImageWidth; //from rect() layout
   } else { //False if Portrait
     largerDimension1 = picHeight1;
     smallerDimension1 = picWidth1;
