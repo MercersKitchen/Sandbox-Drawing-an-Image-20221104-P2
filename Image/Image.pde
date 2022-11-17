@@ -41,12 +41,12 @@ void setup()
   //Note: meta explored in MP3's or music files
   //Obi-wan-star-wars-jedi-23864621-800-600.jpg
   //Note: Dimensions are found in the image file / Right Click / Properties / Details
-  int picWidth = 800;
-  int picHeight = 600;
-  int pic2Width = 860; //landscape
-  int pic2Height = 529; //landscape
-  //int pic3Width = ; //portrait
-  //int pic3Height = ; //portrait
+  int picWidth1 = 800; //Obi Landscape
+  int picHeight1 = 600;
+  int picWidth2 = 860; //Bike Landscape
+  int picHeight2 = 529;
+  int picWidth3 = ; //DarthVader Portrait
+  int picHeight3 = ;
   //
   float smallerDimension, largerDimension, smallerDimension2, largerDimension2;
   //Image Orientation: Landscape, Portrait, Square
